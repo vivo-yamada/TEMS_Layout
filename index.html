@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>試験計画書 - EXP-21-6114</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <span class="doc-title">試験計画書</span>
+                <span class="doc-number">EXP-21-6114</span>
+            </div>
+            <div class="header-center">
+                <div class="emc-evaluation">
+                    <label class="emc-label">EMC評価</label>
+                    <div class="emc-options">
+                        <label class="radio-label">
+                            <input type="radio" name="emc" value="有" checked>
+                            <span>有</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="emc" value="無">
+                            <span>無</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="btn btn-list">一覧に戻る</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="content-row">
+                <section class="db-info">
+                    <h3>社内DB情報の引用</h3>
+                    <div class="info-row">
+                        <label>サンプル手配番号/試作手配№：</label>
+                        <input type="text" value="F0404104" readonly>
+                        <button class="btn-search">検索開始</button>
+                    </div>
+                    <div class="info-row">
+                        <label>号口管理番号/引合番号/製企書№：</label>
+                        <input type="text" value="T220171" readonly>
+                        <button class="btn-search">検索開始</button>
+                    </div>
+                </section>
+
+                <section class="hmi-section">
+                    <h3>HMI第１技術部　第１設計室</h3>
+                    <table class="hmi-table">
+                        <tr>
+                            <th>承認</th>
+                            <th>点検</th>
+                            <th>担当</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="rejected">却下</span>
+                                <span class="acknowledged">承認</span>
+                            </td>
+                            <td>
+                                <span class="rejected">却下</span>
+                                <span class="checked">点検</span>
+                            </td>
+                            <td>
+                                <span class="registered">登録</span>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section class="business-section">
+                    <h3>実験部　シフター・セキュリティ実験室</h3>
+                    <table class="business-table">
+                        <tr>
+                            <th>承認</th>
+                            <th>総合点検</th>
+                            <th>点検</th>
+                            <th>試験担当</th>
+                            <th>計画担当</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="rejected">差戻</span>
+                                <span class="acknowledged">承認</span>
+                            </td>
+                            <td>
+                                <span class="rejected">差戻</span>
+                                <span class="checked">点検</span>
+                            </td>
+                            <td>
+                                <span class="rejected">差戻</span>
+                                <span class="checked">点検</span>
+                            </td>
+                            <td>
+                                <span class="registered">登録</span>
+                            </td>
+                            <td>
+                                <span class="registered">登録</span>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+
+            <div class="notification-bar">
+                <span>・適合設計の案件は、適合設計依頼書№を入力して下さい</span>
+                <div class="compliance-input">
+                    <label class="compliance-label">適合設計依頼書№</label>
+                    <input type="text" class="compliance-textbox" value="">
+                </div>
+            </div>
+
+            <div class="content-row">
+                <section class="basic-info-section">
+                    <h3>基本情報</h3>
+                    <div class="basic-info-content">
+                        <div class="info-column">
+                            <div class="form-group">
+                                <label class="form-label">試験種類</label>
+                                <select class="form-select">
+                                    <option selected>DV試験（新規）</option>
+                                    <option>DV試験（改良）</option>
+                                    <option>PV試験</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">車種№</label>
+                                <input type="text" class="form-input" value="">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">客先</label>
+                                <input type="text" class="form-input" value="">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">製造工場</label>
+                                <input type="text" class="form-input" value="">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">報告希望日</label>
+                                <input type="date" class="form-input" value="">
+                            </div>
+                        </div>
+
+                        <div class="info-column">
+                            <div class="form-group">
+                                <label class="form-label">車両L/O日</label>
+                                <input type="date" class="form-input" value="">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">号口出図日</label>
+                                <input type="date" class="form-input" value="">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">本型本工程日</label>
+                                <input type="date" class="form-input" value="">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">初期管理区分</label>
+                                <input type="text" class="form-input" value="">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">製品リスクランク</label>
+                                <input type="text" class="form-input" value="">
+                            </div>
+                        </div>
+
+                        <div class="info-column">
+                            <div class="form-group">
+                                <label class="form-label">客先品番</label>
+                                <input type="text" class="form-input" value="12345-12345">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">社内品番</label>
+                                <input type="text" class="form-input" value="123456-0000">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">サンプル素性</label>
+                                <input type="text" class="form-input" value="本型品">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">サンプル納期</label>
+                                <input type="date" class="form-input" value="">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">ｎ数</label>
+                                <input type="number" class="form-input" value="">
+                            </div>
+                        </div>
+
+                        <div class="info-column">
+                            <div class="form-group">
+                                <label class="form-label">客先品名</label>
+                                <input type="text" class="form-input" value="">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">社内品名</label>
+                                <input type="text" class="form-input" value="">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">その他素性</label>
+                                <input type="text" class="form-input" value="">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">仕向け</label>
+                                <input type="text" class="form-input" value="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="content-row">
+                <section class="related-docs">
+                    <h3>関連評技連</h3>
+                    <div class="doc-list">
+                        <span>EXF-24-1111</span>
+                        <span>EXF-24-2222</span>
+                        <span>EXF-24-3333</span>
+                    </div>
+                </section>
+
+                <section class="related-reports">
+                    <h3>関連報告書</h3>
+                    <div class="doc-list">
+                        <span>R12-25-001</span>
+                        <span>R12-25-005</span>
+                        <span>R12-25-010</span>
+                    </div>
+                </section>
+            </div>
+
+            <div class="content-row">
+                <section class="base-info">
+                    <h3>ベース品からの変化点</h3>
+                </section>
+            </div>
+
+            <div class="content-bottom">
+                <section class="test-purpose">
+                    <h3>試験の目的</h3>
+                    <div class="purpose-content">
+                        <p>【背景・目的】 ※データ連携が必要(客先: 社内要求)</p>
+                        <p>◇120D 4WD SW DV評価（高温放置）にて、黄昏が発生した。</p>
+                        <p>　指定環境として、ノブ（ST800）×ボルダ（TRABS21）が回収材であるため。</p>
+                        <p>　高温放置後に適荷重が加わると、断念部がズレ黄昏が発生した考えられる。</p>
+                        <p>　よって、ボルタの材料変更品にて、効果確認を実施する。</p>
+                        <p>※ノブ単体でも不具合が発生していることから、本評価についてはノブ単体での効果確認とする</p>
+                    </div>
+                </section>
+                <section class="other-section">
+                    <h3>その他</h3>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
