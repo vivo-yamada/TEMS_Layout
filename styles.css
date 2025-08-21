@@ -111,7 +111,8 @@ body {
     background-color: #0099ff;
     color: white;
     border-color: #0099ff;
-    padding: 8px 20px;
+    padding: 6px 20px;
+    font-size: 14px;
 }
 
 .btn-list:hover {
@@ -170,7 +171,7 @@ body {
 }
 
 .db-info {
-    flex: 0 0 40%;
+    flex: 0 0 35%;
     border: 1px solid #ccc;
     padding: 10px;
     background-color: #e8eef8;
@@ -198,7 +199,7 @@ body {
 }
 
 .info-row input {
-    flex: 1;
+    width: 120px;
     padding: 4px 8px;
     border: 1px solid #999;
 }
@@ -220,7 +221,7 @@ body {
 }
 
 .business-section {
-    flex: 0 0 33%;
+    flex: 0 0 38%;
 }
 
 .hmi-section h3, .business-section h3 {
@@ -250,6 +251,7 @@ body {
     border: 1px solid #ccc;
     text-align: center;
     height: 40px;
+    white-space: nowrap;
 }
 
 .delayed {
@@ -269,6 +271,7 @@ body {
     cursor: pointer;
     font-weight: normal;
     min-width: 50px;
+    display: inline-block;
 }
 
 .status-btn:hover {
