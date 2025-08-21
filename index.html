@@ -29,6 +29,21 @@
                 </div>
             </div>
             <div class="header-right">
+                <div class="action-menu">
+                    <select class="action-select">
+                        <option value="">アクションを選択</option>
+                        <option value="save">一時保存</option>
+                        <option value="revise">改訂</option>
+                        <option value="duplicate">複製</option>
+                        <option value="delete">削除</option>
+                        <option value="create">起票</option>
+                        <option value="print">印刷</option>
+                        <option value="share">情報共有者を追加</option>
+                        <option value="import">依頼書からインポート</option>
+                        <option value="documents">関連資料の登録/閲覧</option>
+                    </select>
+                    <button class="btn btn-execute">実行</button>
+                </div>
                 <button class="btn btn-list">一覧に戻る</button>
             </div>
         </header>
@@ -59,15 +74,15 @@
                         </tr>
                         <tr>
                             <td>
-                                <span class="rejected">却下</span>
-                                <span class="acknowledged">承認</span>
+                                <button class="status-btn rejected">却下</button>
+                                <button class="status-btn acknowledged">承認</button>
                             </td>
                             <td>
-                                <span class="rejected">却下</span>
-                                <span class="checked">点検</span>
+                                <button class="status-btn rejected">却下</button>
+                                <button class="status-btn checked">点検</button>
                             </td>
                             <td>
-                                <span class="registered">登録</span>
+                                <button class="status-btn registered">登録</button>
                             </td>
                         </tr>
                     </table>
@@ -85,22 +100,22 @@
                         </tr>
                         <tr>
                             <td>
-                                <span class="rejected">差戻</span>
-                                <span class="acknowledged">承認</span>
+                                <button class="status-btn rejected">差戻</button>
+                                <button class="status-btn acknowledged">承認</button>
                             </td>
                             <td>
-                                <span class="rejected">差戻</span>
-                                <span class="checked">点検</span>
+                                <button class="status-btn rejected">差戻</button>
+                                <button class="status-btn checked">点検</button>
                             </td>
                             <td>
-                                <span class="rejected">差戻</span>
-                                <span class="checked">点検</span>
+                                <button class="status-btn rejected">差戻</button>
+                                <button class="status-btn checked">点検</button>
                             </td>
                             <td>
-                                <span class="registered">登録</span>
+                                <button class="status-btn registered">登録</button>
                             </td>
                             <td>
-                                <span class="registered">登録</span>
+                                <button class="status-btn registered">登録</button>
                             </td>
                         </tr>
                     </table>
